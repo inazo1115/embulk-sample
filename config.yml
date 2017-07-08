@@ -1,0 +1,18 @@
+in:
+  type: file
+  path_prefix: ./input/input_file_
+  parser:
+    type: csv
+    columns:
+    - {name: c0, type: long}
+    - {name: c1, type: string}
+    charset: UTF-8
+    newline: LF
+    delimiter: ','
+    quote: '"'
+    escape: '"'
+    trim_if_not_quoted: false
+    skip_header_lines: 0
+    allow_extra_columns: false
+    allow_optional_columns: false
+out: {type: stdout}
